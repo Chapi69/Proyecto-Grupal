@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/main.css">
+<!--fdf-->
+
+<style>
+    div {
+      margin: 0 0 1.2em 0;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      margin: 0 0 1em;
+      padding: 1.5em 1.5em 1.0em 1.5em;
+    }
+    input {
+      border: 1px solid #ccc;
+      color: #666;
+      font-size: 1em;
+      padding: 0.2em;
+      width: calc(100% - 3.8em);
+    }
+    label {
+      color: #444;
+      display: inline-block;
+      width: 6.2em;
+    }
+    legend {
+      color: #444;
+      font-weight: 400;
+      padding: 0 0.5em 0 0.5em;
+    }
+    p#data {
+      height: 1em;
+    }
+  </style>
+        <script type="text/javascript">
+             window.onload = function(e) {
+               buscarPersona("");
+            };            
+            
+        </script>      
+    </head>
+    <body>
+        
+  <div id="container">
+
+    <h1><font><font> Ejemplo UPeU</font></font></h1>
+
+    <fieldset>
+        <legend><font><font>Registro Persona</font></font></legend>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>Nombre:</td> 
+                                        <td><input type="text" id="nombre" value=""></td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Apellidos:</td>
+                                        <td><input type="text" id="apellidos" value=""></td>
+                                    </tr>    
+                                    <tr>
+                                        <td>Dni:</td>
+                                        <td><input type="text" id="dni" value=""></td>
+                                    </tr>    
+                                    
+                                     <tr>
+                                         
+                                        <td>Fecha Nacimiento:<+/td> 
+                                        <td><input type="date"  id="fechanacimiento"></td> 
+                                    </tr>
+                                    <tr>
+                                        <td>E-mail:</td> 
+                                        <td><input type="email" value="" id="email"></td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Telefono:</td> 
+                                        <td><input type="text" value="" id="telefono"></td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Genero:</td> 
+                                        <td>                                        
+                                            Masculino<input type="radio" id="genero" name="genero" value="1" checked="true">
+                                           
+                                        </td> 
+                                        <td>
+                                            Femenino<input type="radio" id="genero" name="genero" value="2" > 
+                                        </td>
+                                         
+                                    </tr>
+                                    <tr>
+                                        <td>Estudio:</td> 
+                                        <td>
+                                            <select name="estudio" id="estudio">
+                                                <option value="1">Ing. Sistemas</option>
+                                                <option value="2">Ing. Civl</option>
+                                                <option value="3">Ing. Ambiental</option>
+                                            </select>
+                                        </td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Grado:</td> 
+                                        <td>
+                                            Bachiller<input type="checkbox" name="grado" value="Bachiller" checked="true" id="Bachiller">
+                                        </td>  
+                                        <td>
+                                            Magister<input type="checkbox" name="grado" value="Magister" id="Magister">
+                                        </td>
+                                         <td>
+                                            Doctorado <input type="checkbox" name="grado" value="Doctorado" id="Doctorado">
+                                        </td> 
+                                         <td>
+                                            Postdoctorado<input type="checkbox" name="grado" value="Postdoctorado" id="  Postdoctorado">
+                                        
+                                        </td> 
+                                    </tr>
+
+                                </table>                                
+                            </div>        
+                               
+      
+      <form action="" method="post" class="form-register" onsubmit="return boton();">
+        <button id="storeButton"><font><font class="">Guardar</font></font></button>
+    </fieldset>
+
+    <fieldset>
+      <legend><font><font>Buscar Persona:</font></font></legend>
+      <div>
+        <label for="query"><font><font>Nombre: </font></font></label><input id="queryx" type="text" value="">
+      </div>
+      
+      <button id="findButton"required><font><font>Buscar</font></font></button>
+
+    </fieldset>
+
+
+    <center>
+        <table id="TableData" border="0" style="width: 200%">
+        <thead style="background-color: buttonhighlight">
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>E-mail</th>
+        <th>DNI</th>
+        <th>Fecha Nacimiento</th>
+        <th>Telefono</th>        
+        <th>Genero</th>
+        <th>Estudio</th>
+        <th>Opciones</th>
+        </thead>
+        <tbody id="data">        
+        </tbody>
+    </table>
+  </center>
+
+    <script type="text/javascript" async="" src="js/libs/ga.js"></script>
+    <script src="js/upeu.js"></script>
+
+    
+  </div>
+
+  <script src="js/libs/ga1.js"></script>
+  <a href="http://adm"></a>
+       
+  </body>
+</html>

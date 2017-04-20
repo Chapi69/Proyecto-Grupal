@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/main.css"
+<title>Login para 1 usuario</title>
+</head>
+
+<h1>Formulario Login</h1>
+<SCRIPT  language=JavaScript> 
+function go(){
+if (document.form.password.value=='chapi' && document.form.login.value=='chapi'){ 
+   
+        document.form.submit(); 
+    alert("se esta iniciando sesion"); 
+        } 
+    else{ 
+         alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+    } 
+} 
+</SCRIPT> 
+<FORM name=form action="index.html">
+
+<P>Usuario:    <INPUT type=text name=login> 
+<P>Contraseña: <INPUT type=password name=password> 
+<INPUT onclick=go() type=button value=Acceder>
+
+</FORM> 
+</body>
+</html>
+cr7usuario.html hostith ❤ 
